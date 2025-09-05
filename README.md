@@ -30,7 +30,7 @@ Experience the game live: [https://bencekovari.github.io/aidev-ball/](https://be
 ### Prerequisites
 
 - Node.js (version 14 or higher)
-- npm or yarn package manager
+- npm or yarn package manager 
 
 ### Installation
 
