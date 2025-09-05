@@ -1,4 +1,4 @@
-# AI Dev Ball
+# Bouncing ball
 
 ![Logo](public/logo.png)
 
