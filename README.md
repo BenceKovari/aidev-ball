@@ -2,7 +2,7 @@
 
 ![Logo](public/logo.png)
 
-A real-time microphone-controlled bouncing ball game built with React and Web Audio API. This project demonstrates advanced audio processing, physics simulation, and interactive web development techniques.
+A real-time microphone-controlled bouncing ball game built with React and Web Audio API. This project demonstrates advanced audio processing, physics simulation, and interactive web development techniques. This project was created by using ChatGPT Canvas and Claude Code.
 
 ## 🎮 Live Demo
 
@@ -74,10 +74,4 @@ This project was developed as part of the **AI Development Course** at Budapest 
 
 ## 📄 License
 
-This project is developed for educational purposes as part of an academic course. The code is available for learning and reference. Please respect intellectual property rights and academic integrity guidelines when using or referencing this work.
-
-## 🤝 Acknowledgments
-
-- Generated and developed with assistance from ChatGPT and Claude AI
-- Course instruction and guidance from Budapest University of Technology and Economics
-- Web Audio API documentation and community resources
+This project is developed for educational purposes as part of an academic course under the MIT license. Feel free to reuse and modify it's code but please reference this repo in your derived work.
