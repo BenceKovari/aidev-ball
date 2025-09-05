@@ -299,7 +299,7 @@ export default function App() {
       <div className="footer">(c) BME, VIK, AUT, 2025 - Created with ChatGPT</div>
 
       <a href="https://www.aut.bme.hu/Course/aidev" target="_blank" rel="noopener noreferrer" className="logo-link">
-        <img src="/logo.png" alt="AUT Logo" />
+        <img src="logo.png" alt="AUT Logo" />
       </a>
     </div>
   )
