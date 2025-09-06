@@ -4,9 +4,19 @@
 
 A real-time microphone-controlled bouncing ball game built with React and Web Audio API. This project demonstrates advanced audio processing, physics simulation, and interactive web development techniques. This project was created by using ChatGPT Canvas and Claude Code.
 
+## 🎓 Academic Context
+
+This project was developed as part of the **AI Assisted Software Development** Course at Budapest University of Technology and Economics.
+
+**Course Homepage**: [https://www.aut.bme.hu/Course/aidev](https://www.aut.bme.hu/Course/aidev)
+
 ## 🎮 Live Demo
 
 Experience the game live: [https://bencekovari.github.io/aidev-ball/](https://bencekovari.github.io/aidev-ball/)
+
+## 📄 License
+
+This project is developed for educational purposes as part of an academic course under the MIT license. Feel free to reuse and modify it's code but please reference this repo in your derived work.
 
 ## 🎯 Features
 
@@ -66,12 +76,6 @@ npm run preview
 3. Make sounds (speak, clap, whistle) to make the ball bounce
 4. Watch the particle effects when the ball reaches the top!
 
-## 🎓 Academic Context
 
-This project was developed as part of the **AI Development Course** at Budapest University of Technology and Economics.
 
-**Course Homepage**: [https://www.aut.bme.hu/Course/aidev](https://www.aut.bme.hu/Course/aidev)
 
-## 📄 License
-
-This project is developed for educational purposes as part of an academic course under the MIT license. Feel free to reuse and modify it's code but please reference this repo in your derived work.

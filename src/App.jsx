@@ -52,9 +52,8 @@ export default function App() {
       fxCtxRef.current = ctx
       function resize() {
         const dpr = window.devicePixelRatio || 1
-        const rect = canvas.getBoundingClientRect()
-        canvas.width = Math.floor(rect.width * dpr)
-        canvas.height = Math.floor(rect.height * dpr)
+        canvas.width = Math.floor(window.innerWidth * dpr)
+        canvas.height = Math.floor(320 * dpr)
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
       }
       resize()
@@ -141,9 +140,8 @@ export default function App() {
     const ctx = fxCtxRef.current
     if (!canvas || !ctx) return
 
-    const { width, height } = canvas.getBoundingClientRect()
-    const x = Math.random() * width
-    const y = height - 6
+    const x = Math.random() * window.innerWidth
+    const y = 320 - 6
 
     const colors = ['#ffd166', '#ef476f', '#06d6a0', '#118ab2', '#f97316', '#a78bfa']
     const particles = []
@@ -158,7 +156,7 @@ export default function App() {
         life: 600 + Math.random() * 500,
         age: 0,
         color: colors[Math.floor(Math.random() * colors.length)],
-        size: 2 + Math.random() * 2
+        size: 3 + Math.random() * 4
       })
     }
     fireworksRef.current.push({ particles })
@@ -296,9 +294,9 @@ export default function App() {
         <div className="level-label">{ampDb.toFixed(1)} dB</div>
       </div>
 
-      <div className="footer">(c) BME, VIK, AUT, 2025 - Created with ChatGPT</div>
+      <div className="footer">(c) BME, VIK, AUT, 2025 - Created with ChatGPT and Claude, see <a href="https://github.com/BenceKovari/aidev-ball" target="_blank" rel="noopener noreferrer">https://github.com/BenceKovari/aidev-ball</a> for details</div>
 
-      <a href="https://www.aut.bme.hu/Course/aidev" target="_blank" rel="noopener noreferrer" className="logo-link">
+      <a href="https://github.com/BenceKovari/aidev-ball" target="_blank" rel="noopener noreferrer" className="logo-link">
         <img src="logo.png" alt="AUT Logo" />
       </a>
     </div>

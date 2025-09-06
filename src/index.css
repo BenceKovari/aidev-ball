@@ -26,7 +26,10 @@ button { font: inherit; cursor: pointer; }
 }
 .controls label { display: flex; align-items: center; gap: 8px; }
 .controls .row { display: flex; align-items: center; justify-content: space-between; width: 100%; }
-.controls input[type="range"] { width: 160px; }
+.controls input[type="range"] { 
+  width: 160px;
+  accent-color: #a91847;
+}
 
 .game-container { position: relative; width: 100%; height: 100vh; overflow: hidden; }
 
@@ -35,8 +38,8 @@ button { font: inherit; cursor: pointer; }
   left: 50%;
   transform: translateX(-50%);
   width: 60px; height: 60px; border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #5fb3ff, #1e71ff 60%, #0f3ca8);
-  box-shadow: 0 12px 28px rgba(30, 113, 255, 0.55), inset 0 2px 6px rgba(255,255,255,0.35);
+  background: radial-gradient(circle at 30% 30%, #c44569, #a91847 60%, #7b1332);
+  box-shadow: 0 12px 28px rgba(169, 24, 71, 0.55), inset 0 2px 6px rgba(255,255,255,0.35);
   will-change: transform, top;
 }
 
@@ -55,7 +58,12 @@ button { font: inherit; cursor: pointer; }
   position: fixed;
   bottom: calc(env(safe-area-inset-bottom, 0) + 30px);
   width: 100%; text-align: center; padding: 4px 0;
-  font-size: 12px; color: #9fb2e8; opacity: 0.85; pointer-events: none; z-index: 10;
+  font-size: 12px; color: #9fb2e8; opacity: 0.85; z-index: 10;
+}
+
+.footer a {
+  color: #9fb2e8;
+  text-decoration: underline;
 }
 
 /* Big bottom noise level bar */
@@ -79,14 +87,14 @@ button { font: inherit; cursor: pointer; }
 }
 .level-marker {
   position: absolute; top: 0; bottom: 0; width: 2px;
-  background: #ffffffaa; box-shadow: 0 0 8px rgba(255,255,255,0.6);
+  background: #000000; box-shadow: 0 0 8px rgba(0,0,0,0.6);
   pointer-events: none;
 }
 .level-label { position: absolute; right: 8px; bottom: 3px; font-size: 11px; opacity: 0.9; color: #e8eef9; }
 
 /* Fireworks canvas pinned at the bottom */
 .fireworks-canvas {
-  position: fixed; left: 0; right: 0; bottom: 28px; height: 160px;
+  position: fixed; left: 0; right: 0; bottom: 28px; height: 320px; width: 100vw;
   z-index: 14; pointer-events: none;
 }
 
@@ -98,6 +106,7 @@ button { font: inherit; cursor: pointer; }
   z-index: 20;
   opacity: 0.8;
   transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .logo-link:hover {
